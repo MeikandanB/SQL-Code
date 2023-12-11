@@ -1,0 +1,31 @@
+// Create table
+CREATE TABLE Customer(
+    SNO INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Address VARCHAR(50),
+    Email VARCHAR(50),
+  Phone int(10)
+);
+
+//Insert value 
+INSERT INTO Customer VALUES (1, "Monish kanna ", "PKR Layout","monishkanna@gmail.com",8852160134); 
+INSERT INTO Customer VALUES (2, "Sanjay", "Periyar Nager","sanjay18@gmail.com",9688521601);
+INSERT INTO Customer VALUES (3, "Vasantha Kumar", "Palavanchipalyam","vasanthakumar@gmail.com",9003445211);
+INSERT INTO Customer VALUES (4, "Sugumar", " HSR layout","sugumararun.com",9533465291);
+INSERT INTO Customer VALUES (5, "Lakshmanan", "Guidy,Chennai","lakshanan@gmail.com",9903415281);
+INSERT INTO Customer VALUES (2, "Nithish", "Marathali","nithishmsd@gmail.com",6303445211);
+
+//Add value 
+ALTER TABLE Customer
+ADD Age varchar(255);
+
+//update table
+UPDATE Customer
+SET Name = 'sanjay', Email= 'meikadan18@gmail.com'
+WHERE SNO = 1;
+
+// Delete table
+DELETE FROM Customer WHERE Email='meikadan18@gmail.com';
+
+// Drop table
+DROP TABLE Customer;
